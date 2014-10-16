@@ -31,7 +31,7 @@ endfunction
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
 call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
@@ -56,3 +56,21 @@ set smarttab      " insert tabs on the start of a line according to
                     "    shiftwidth, not tabstop
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+filetype plugin indent on
+set pastetoggle=<F2>
+vmap Q gq
+nmap Q gqap
+
+nmap <silent> ,/ :nohlsearch<CR>
+
+:filetype plugin on
+"Setting up conditional color scheme
+syntax enable
+
+colorscheme gotham256
