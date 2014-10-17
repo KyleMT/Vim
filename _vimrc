@@ -63,6 +63,8 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 filetype plugin indent on
+filetype plugin on
+
 set pastetoggle=<F2>
 vmap Q gq
 nmap Q gqap
@@ -76,3 +78,9 @@ syntax enable
 colorscheme gotham256
 set guioptions-=T
 set guioptions-=r
+
+"Map emmit key to leader 
+map <leader>y <c-y>,
+
+"Map tComment key to leader
+map <leader>c <c-_><c-_>

@@ -188,16 +188,3 @@ snippet table
 	</table>${4}
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
-snippet header
-	<header id="${1:ID}" name="${2:Name}" class="${3:Class}">
-
-	</header>
-snippet footer
-	<footer id="${1:ID}" name="${2:Name}" class="${3:Class}">
-
-	</footer>
-snippet section
-	<section id="${1:ID}" name="${2:Name}" class="${3:Class}">
-
-	</section>
-	
